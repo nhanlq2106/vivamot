@@ -1,5 +1,5 @@
 name = Vivamot
-description = 'Vivamot themes'
+description = ''
 package = Commerce Kickstart
 core = 7.x
 screenshot = screenshot.png
@@ -60,6 +60,11 @@ css[commerce_kickstart_style.css][name] = Commerce Kickstart theme global style.
 css[commerce_kickstart_style.css][description] = This file holds all the globally active custom CSS of Commerce Kickstart theme.
 css[commerce_kickstart_style.css][options][weight] = 11
 settings[alpha_css][commerce_kickstart_style.css] = 'commerce_kickstart_style.css'
+
+css[vivamot.css][name] = Vivamot global style.
+css[vivamot.css][description] = This file holds all the globally active custom CSS of Commerce Kickstart theme.
+css[vivamot.css][options][weight] = 12
+settings[alpha_css][vivamot.css] = 'vivamot.css'
 
 ; OPTIONAL LIBRARIES
 
