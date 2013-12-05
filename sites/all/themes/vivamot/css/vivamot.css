@@ -1,5 +1,50 @@
 body{
   background: url("../images/bg.jpg") repeat top left;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+}
+@font-face {
+  font-family: 'HelveticaNeueBdCn';
+  src: url('../fonts/helveticaneueltstd-bdcn-webfont.eot');
+  src: url('../fonts/helveticaneueltstd-bdcn-webfont.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/helveticaneueltstd-bdcn-webfont.woff') format('woff'), 
+    url('../fonts/helveticaneueltstd-bdcn-webfont.ttf') format('truetype'), 
+    url('../fonts/helveticaneueltstd-bdcn-webfont.svg#HelveticaNeueBdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCondensed';
+  src: url('../fonts/helveticaneueltstd-cn-webfont.eot');
+  src: url('../fonts/helveticaneueltstd-cn-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneueltstd-cn-webfont.woff') format('woff'), 
+    url('../fonts/helveticaneueltstd-cn-webfont.ttf') format('truetype'), 
+    url('../fonts/helveticaneueltstd-cn-webfont.svg#HelveticaNeueCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  src: url('../fonts/HelveticaNeueLTPro-MdCn.eot');
+  src: url('../fonts/HelveticaNeueLTPro-MdCn.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/HelveticaNeueLTPro-MdCn.woff') format('woff'), 
+    url('../fonts/HelveticaNeueLTPro-MdCn.ttf') format('truetype'), 
+    url('../fonts/HelveticaNeueLTPro-MdCn.svg#HelveticaNeueLTPro-MdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/BEBAS___-webfont.eot');
+  src: url('../fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BEBAS___-webfont.woff') format('woff'), 
+    url('../fonts/BEBAS___-webfont.ttf') format('truetype'), 
+    url('../fonts/BEBAS___-webfont.svg#HelveticaNeueCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active{
+  box-shadow: none;
 }
 
 /*------------------------------ HEADER ---------------------------------*/
@@ -25,6 +70,7 @@ body{
 #block-views-exp-display-products-page{
   float: right;
   margin-top: 10px;
+  font-family: 'HelveticaNeueCondensed';
 }
 /* User Menu */
 #block-menu-menu-user-menu ul.menu li{
@@ -40,6 +86,8 @@ body{
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   text-transform: uppercase;
+  font-family: 'HelveticaNeueCondensed';
+  font-size: 15px;
 }
 /* My Cart*/
 .block-shopping-cart-block .content{
@@ -50,11 +98,14 @@ body{
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .line-item-quantity{
   color: #232323;
   text-transform: uppercase;
+  font-family: 'HelveticaNeueCondensed';
+  font-size: 15px;
 }
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .line-item-total{
   color: #232323;
-  font-weight: bold;
   padding-right: 6px;
+  font-family: 'HelveticaNeueBdCn';
+  font-size: 15px;
 }
 /* Checkout Button */
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary ul.links{
@@ -63,14 +114,16 @@ body{
 }
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary ul.links li a{
   background: url("../images/arrow-icon.png") no-repeat scroll 89px center;
-    border-left: 1px solid #232323;
-    color: #232323;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 14px;
-    padding-left: 10px;
-    padding-right: 16px;
-    text-transform: uppercase;
+  border-left: 1px solid #232323;
+  color: #232323;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'HelveticaNeueCondensed';
+  font-size: 15px;
+  line-height: 14px;
+  padding-left: 10px;
+  padding-right: 16px;
+  text-transform: uppercase;
 }
 /* Search Product */
 #block-views-exp-display-products-page{
@@ -89,7 +142,7 @@ body{
 #block-boxes-social-links{
   float: right;
   margin-right: 10px;
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .facebook, .facebook-hover, .twitter, .twitter-hover, .blog, .blog-hover{
   background: url("../images/social-icon.png") no-repeat;
@@ -135,9 +188,22 @@ ul#superfish-1 > li > a{
   color: #141414;
   text-transform: uppercase;
   padding: 12px 18px;
+  font-family: 'Bebas';
+  font-size: 19px;
 }
 ul#superfish-1 > li.last > a{
   border-right: none;
+}
+ul#superfish-1 > li > a.menuparent{
+  padding: 12px 35px 12px 18px;
+}
+ul#superfish-1 > li > a:hover > .sf-sub-indicator,
+ul#superfish-1 > li > a:focus > .sf-sub-indicator,
+ul#superfish-1 > li > a > .sf-sub-indicator{
+  background-position: -50px 0;
+}
+.sf-sub-indicator{
+  background: url("../images/arrow-icon.png") no-repeat;
 }
 ul#superfish-1 > li.active-trail{
   border-bottom: 3px solid #141414;
@@ -154,6 +220,7 @@ ul#superfish-1 li ul li{
 }
 ul#superfish-1 li ul li a{
   color: #FFF;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /*------------------------------ CONTENT -------------------------------*/
@@ -162,6 +229,48 @@ ul#superfish-1 li ul li a{
   box-shadow: 0 1px 4px #BBB;
   -moz-box-shadow: 0 1px 4px #BBB;
   -webkit-box-shadow: 0 1px 4px #BBB;
+}
+
+/*----------------------------- POSTSCRIPT ----------------------------*/
+#zone-postscript{
+  margin: 0 auto;
+}
+#region-postscript-first{
+  box-shadow: 0 1px 4px #BBB;
+  -moz-box-shadow: 0 1px 4px #BBB;
+  -webkit-box-shadow: 0 1px 4px #BBB;
+}
+#region-postscript-second{
+  background: #2c2926;
+  color: #FFF;
+  margin-bottom: 0;
+  box-shadow: 0 1px 4px #BBB;
+  -moz-box-shadow: 0 1px 4px #BBB;
+  -webkit-box-shadow: 0 1px 4px #BBB;
+}
+#block-boxes-free-shipping{
+  height: 150px;
+  overflow: hidden;
+}
+#boxes-box-free_shipping{
+  padding: 15px 20px;
+}
+#boxes-box-free_shipping h2,
+#boxes-box-free_shipping h3{
+  margin-bottom: 5px;
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  font-weight: normal;
+}
+#boxes-box-free_shipping h2{
+  font-size: 26px;
+}
+#boxes-box-free_shipping h3{
+  font-size: 14px;
+}
+#boxes-box-free_shipping p{
+  opacity: 0.56;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 /*----------------------------- FOOTER ------------------------------*/
@@ -200,6 +309,59 @@ ul#superfish-1 li ul li a{
 #zone-footer2 p{
   margin: 20px 0;
   text-align: center;
+  color: #2c2926;
+  font-size: 12px;
+}
+/* Footer First */
+#zone-footer .block p{
+  color: #878584;
+}
+#zone-footer h2.block-title,
+#block-menu-menu-footer-navigation ul.menu li.expanded span{
+  font-size: 16px;
+  color: #2c2926;
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed #e6e6e6;
+  margin-bottom: 13px;
+  display: block;
+}
+#block-menu-menu-footer-navigation ul.menu li.expanded ul.menu li a,
+#block-views-shop-category-block .views-row a{
+  font-family: Georgia, "Times New Roman", serif;
+  color: #878584;
+}
+#block-views-shop-category-block{
+  margin-right: 20px;
+}
+#block-boxes-subscribe-newsletter{
+  margin-right: 10px;
+}
+#block-boxes-subscribe-newsletter h2.block-title{
+  border: none;
+  margin-bottom: 0;
+}
+#block-boxes-subscribe-newsletter input[type="text"]{
+  background: #FFF;
+  border: 1px solid #d8d8d8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  height: 32px;
+    width: 100%;
+}
+#block-boxes-subscribe-newsletter input[type="submit"]{
+   background: #2c2926;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFF;
+    height: 30px;
+    margin-top: 2px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    padding: 3px 7px;
 }
 
 /*-------------------------------- FRONTPAGE ---------------------------------*/
@@ -223,15 +385,36 @@ body.front #region-content{
   color: #FFF;
 }
 .slider-body h2{
-  padding: 15px 20px;
+  padding: 15px;
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  font-weight: normal;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .slider-body h2 a{
   color: #FFF;
-  padding: 20px;
 }
 .slider-body .field-name-body{
-  opacity: 57%;
+  opacity: 0.57;
   padding: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 15px;
+}
+/* Feature Products */
+#block-views-display-products-block-1 ul.all-products li{
+  margin: 0 15px 15px 0;
+  background: #FFF;
+  box-shadow: 0 1px 4px #BBB;
+  -moz-box-shadow: 0 1px 4px #BBB;
+  -webkit-box-shadow: 0 1px 4px #BBB;
+}
+#block-views-display-products-block-1 ul.all-products li .node{
+  border: none;
+  margin: 0;
+}
+.node-product-type .field-name-commerce-price{
+  font-size: 14px;
 }
 
 /*--------------------------------- PRODUCTS ---------------------------------*/
@@ -299,10 +482,16 @@ body.front #region-content{
 }
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-submit{
   margin-top: 10px;
-}
-.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-submit{
   background: none #2c2926;
   text-transform: uppercase;
   border-radius: 0;
   padding: 5px 15px;
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  font-size: 13px;
+}
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .wishlist{
+  background: url("../images/wishlist.png") no-repeat left center transparent;
+  color: #2c2926;
+  padding: 0 0 0 20px;
+  font-size: 12px;
 }
