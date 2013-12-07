@@ -611,15 +611,13 @@ body.front #region-content{
   border-radius: 0;
   padding: 5px 15px;
   font-family: 'HelveticaNeueLTPro-MdCn';
-  font-size: 13px;
-  letter-spacing: 0.3px;
+  font-size: 14px;
 }
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .wishlist{
   background: url("../images/wishlist.png") no-repeat left center transparent;
   color: #2c2926;
   padding: 0 0 0 20px;
-  font-size: 12px;
-  letter-spacing: 0.3px;
+  font-size: 14px;
   margin-top: 0;
 }
 .page-products .view-display-products li .content .field-name-commerce-price,
@@ -653,7 +651,7 @@ body.front #region-content{
 
 /*--------------------------------- PRODUCT DETAILS -----------------------------*/
 .node-type-hats .zone-content-wrapper .zone-content .region-content-inner{
-  padding: 0;
+  padding: 20px 0;
 }
 .node-product-type .commerce-product-field-field-images .cloud-zoom-container #wrap{
   float: left !important;
@@ -666,6 +664,25 @@ body.front #region-content{
 }
 .node-product-type .commerce-product-field-field-images .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery:first-child{
   margin-left: 0;
+}
+.node-type-hats  .node-product-type .field-name-commerce-price{
+  float: none;
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.node-type-hats  .node-product-type .field-name-body{
+  margin: 0;
+}
+.node-type-hats  .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .wishlist{
+  margin-bottom: 10px;
+}
+.node-type-hats  .node-product-type header h2{
+   font-family: 'HelveticaNeueLTPro-MdCn';
+  font-size: 24px;
+  color: #2c2926;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 /*--------------------------------- CART -----------------------------------*/
