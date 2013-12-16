@@ -93,48 +93,22 @@ function commerce_kickstart_product_commerce_flat_rate_default_services() {
  */
 function commerce_kickstart_product_commerce_product_default_types() {
   $items = array(
-    'bags_cases' => array(
-      'type' => 'bags_cases',
-      'name' => 'Bags & Cases',
-      'description' => '<em>Bags & Cases</em> are products which contain a size and a color.',
+    'accessories' => array(
+      'type' => 'accessories',
+      'name' => 'Accessories',
+      'description' => '<em>Accessories</em> are products which contain a size and a color.',
       'help' => '',
       'revision' => '1',
     ),
-    'drinks' => array(
-      'type' => 'drinks',
-      'name' => 'Drinks',
-      'description' => '<em>Drinks</em> are products which contain a color.',
+
+    'clothings' => array(
+      'type' => 'clothings',
+      'name' => 'Clothings',
+      'description' => '<em>Clothings</em> are products which contain a size and a color.',
       'help' => '',
       'revision' => '1',
     ),
-    'hats' => array(
-      'type' => 'hats',
-      'name' => 'Hats',
-      'description' => '<em>Hats</em> are products which contain a size and a color.',
-      'help' => '',
-      'revision' => '1',
-    ),
-    'shoes' => array(
-      'type' => 'shoes',
-      'name' => 'Shoes',
-      'description' => '<em>Shoes</em> are products which contain a size and a color.',
-      'help' => '',
-      'revision' => '1',
-    ),
-    'storage_devices' => array(
-      'type' => 'storage_devices',
-      'name' => 'Storage Devices',
-      'description' => '<em>Storage devices</em> are products which contain a capacity.',
-      'help' => '',
-      'revision' => '1',
-    ),
-    'tops' => array(
-      'type' => 'tops',
-      'name' => 'Tops',
-      'description' => '<em>Tops</em> are products which contain a size and a color.',
-      'help' => '',
-      'revision' => '1',
-    ),
+
   );
   return $items;
 }
@@ -229,54 +203,24 @@ function commerce_kickstart_product_image_default_styles() {
  */
 function commerce_kickstart_product_node_info() {
   $items = array(
-    'bags_cases' => array(
-      'name' => t('Bags & Cases'),
+    'accessories' => array(
+      'name' => t('Accessories'),
       'base' => 'node_content',
-      'description' => t('A <em>Bags & Cases</em> is a content type which contain product variations.'),
+      'description' => t('A <em>Accessories</em> is a content type which contain product variations.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
-    'drinks' => array(
-      'name' => t('Drinks'),
+
+    'clothings' => array(
+      'name' => t('Clothings'),
       'base' => 'node_content',
-      'description' => t('A <em>Drinks</em> is a content type which contain product variations.'),
+      'description' => t('A <em>Clothings</em> is a content type which contain product variations.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
-    'hats' => array(
-      'name' => t('Hats'),
-      'base' => 'node_content',
-      'description' => t('A <em>Hats</em> is a content type which contain product variations.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'shoes' => array(
-      'name' => t('Shoes'),
-      'base' => 'node_content',
-      'description' => t('A <em>Shoes</em> is a content type which contain product variations.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'storage_devices' => array(
-      'name' => t('Storage Devices'),
-      'base' => 'node_content',
-      'description' => t('A <em>Storage Devices</em> is a content type which contain product variations.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'tops' => array(
-      'name' => t('Tops'),
-      'base' => 'node_content',
-      'description' => t('A <em>Tops</em> is a content type which contain product variations.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
+
   );
   return $items;
 }

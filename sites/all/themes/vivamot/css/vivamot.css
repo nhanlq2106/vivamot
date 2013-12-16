@@ -624,11 +624,11 @@ body.front #region-content{
 }
 .page-products .view-display-products li .content .field-name-commerce-price,
 .node-product-type .field-name-commerce-price{
-  font-size: 23px;
+  font-size: 16px;
   font-weight: normal;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 24px;
-    margin: 0 0 0 20px;
+    margin: 30px 0 0 10px;
     float: left;
     color: #2c2926;
 }
@@ -640,7 +640,7 @@ body.front #region-content{
 }
 .node-product-type .field-name-field-product{
   float: right;
-    margin: 0 20px 20px 0;
+    margin: 0 10px 20px 0;
     text-align: right;
 }
 .node-product-type .field-name-body{
@@ -649,6 +649,9 @@ body.front #region-content{
   color: #2c2926;
   font-style: italic;
   opacity: 0.57;
+}
+.price_prefix{
+    display:none !important;
 }
 
 /*--------------------------------- PRODUCT DETAILS -----------------------------*/
