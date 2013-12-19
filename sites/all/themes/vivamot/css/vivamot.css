@@ -498,7 +498,8 @@ body.front #region-content{
     margin-right: 0;
 }
 /* Sidebar */
-.page-products #region-sidebar-first{
+.page-products #region-sidebar-first,
+#region-sidebar-second{
   background: #2C2926;
   color: #FFF;
   margin-right: 0;
@@ -545,7 +546,8 @@ body.front #region-content{
   border: none;
   padding: 0;
 }
-.region-sidebar-first .block-facetapi h2{
+.region-sidebar-first .block-facetapi h2,
+#region-sidebar-second h2.block-title{
   background: #161616;
   padding: 10px 15px;
   font-family: 'HelveticaNeueLTPro-MdCn';
@@ -606,7 +608,8 @@ body.front #region-content{
   background: none;
   padding: 0;
 }
-.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-submit{
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-submit,
+#webform-client-form-44 .form-submit{
   margin-top: 10px;
   background: none #2c2926;
   text-transform: uppercase;
@@ -614,6 +617,11 @@ body.front #region-content{
   padding: 5px 15px;
   font-family: 'HelveticaNeueLTPro-MdCn';
   font-size: 14px;
+  color: #FFF;
+}
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-submit:hover,
+#webform-client-form-44 .form-submit:hover{
+  background: #666;
 }
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .wishlist{
   background: url("../images/wishlist.png") no-repeat left center transparent;
@@ -863,4 +871,12 @@ body.front #region-content{
 .pager li a:hover{
   background: none transparent;
   color: #FFF;
+}
+
+/*-------------------------------- CONTACT US ------------------------------*/
+#boxes-box-contact_details{
+  padding: 15px;
+}
+#node-webform-44 .field-name-field-location{
+  margin-bottom: 20px;
 }
