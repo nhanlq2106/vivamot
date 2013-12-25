@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ContactUs feature.
+ */
+
+include_once 'contactus.features.inc';
